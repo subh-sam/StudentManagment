@@ -1,4 +1,4 @@
-package com.myOrganization.ERPSolution.controller;
+package com.myOrganization.ERPSolution.controller.admin;
 
 import com.myOrganization.ERPSolution.dto.attendanceDto.AttendanceReqDto;
 import com.myOrganization.ERPSolution.dto.attendanceDto.AttendanceResDto;

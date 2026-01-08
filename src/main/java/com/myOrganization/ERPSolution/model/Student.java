@@ -23,7 +23,10 @@ public class Student {
     private Integer rollNumber;
 
     @Column(nullable = false)
-    private Integer studentClass;   // 1,2,3,4...12
+    private String password;
+
+    @Column(nullable = false)
+    private Integer studentClass;
 
     @Column(nullable = false)
     private String name;

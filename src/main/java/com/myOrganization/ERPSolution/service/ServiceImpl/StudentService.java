@@ -30,6 +30,7 @@ public class StudentService {
 
         student.setName(studentReqDto.getName());
         student.setStudentClass(studentReqDto.getStudentClass());
+        student.setPassword(studentReqDto.getPassword());
         student.setEmail(studentReqDto.getEmail());
         student.setFatherName(studentReqDto.getFatherName());
         student.setMotherName(studentReqDto.getMotherName());
@@ -72,6 +73,7 @@ attendanceRepository.save(attendance);
         studentResDto1.setStudentClass(student.getStudentClass());
         studentResDto1.setEmail(student.getEmail());
         studentResDto1.setAddress(student.getAddress());
+        studentResDto1.setPassword(student.getPassword());
         studentResDto1.setFatherName(student.getFatherName());
         studentResDto1.setMotherName(student.getMotherName());
         studentResDto1.setNumber(student.getNumber());

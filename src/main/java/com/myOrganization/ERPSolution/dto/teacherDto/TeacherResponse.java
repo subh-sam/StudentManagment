@@ -1,4 +1,11 @@
 package com.myOrganization.ERPSolution.dto.teacherDto;
 
-public class TeacherResponce {
+import lombok.Data;
+
+@Data
+public class TeacherResponse {
+    Long id;
+    private String name;
+    private String phone;
+    private String password;
 }

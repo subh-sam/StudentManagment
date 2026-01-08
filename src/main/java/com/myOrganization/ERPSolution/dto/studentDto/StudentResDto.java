@@ -8,6 +8,7 @@ import lombok.Setter;
 public class StudentResDto {
     private String name;
     private Integer rollNumber;
+    private String password;
     private Integer studentClass;
     private Long studentId;
     private String email;

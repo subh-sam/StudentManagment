@@ -1,5 +1,6 @@
 package com.myOrganization.ERPSolution.dto.studentDto;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
@@ -12,6 +13,8 @@ public class StudentReqDto {
     @Min(value = 1, message = "Student class must be in between 1–12")
     @Max(value = 12, message = "Student class must be in between 1–12")
     private Integer studentClass;
+    @NotNull(message = "password must assign")
+    private String password;
 
     @NotNull(message = "Student RollNumber must be assign Serially")
     private Integer rollNumber;

@@ -15,4 +15,7 @@ public interface StudentRepo extends JpaRepository<Student,Long> {
 
     @Query(value = "select * from student where student_class =:studentClass",nativeQuery = true)
     List<Student> findStudentByClass(@Param("studentClass") Integer studentClass);
+
+    Student findByEmail(String email);
+
 }
